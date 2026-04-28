@@ -32,6 +32,7 @@ public class Application {
     CommandLineRunner run(CarControllerService service) {
         return args -> {
             service.connect();
+            //todo
         };
     }
 }
