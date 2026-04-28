@@ -1,5 +1,6 @@
 appium:
   url: http://127.0.0.1:4723
-  udid: 343776544200EIQ
+  udid: R5GL15F0ZND
+  #udid: R5GL15F0Z3D
   no-reset: true
   new-command-timeout-seconds: 120
