@@ -19,8 +19,8 @@ import java.util.Map;
 public class CarControllerService {
 
     private static final CarPoint GAS_NEUTRAL = CarPoint.of(460, 460);
-    private static final CarPoint GAS_FORWARD = CarPoint.of(460, 330);
-    private static final CarPoint GAS_BACKWARD = CarPoint.of(460, 660);
+    private static final CarPoint GAS_FORWARD = CarPoint.of(460, 300);
+    private static final CarPoint GAS_BACKWARD = CarPoint.of(460, 620);
 
     private static final CarPoint STEER_NEUTRAL = CarPoint.of(1920, 460);
     private static final CarPoint STEER_LEFT = CarPoint.of(1720, 460);
@@ -166,27 +166,6 @@ public class CarControllerService {
             driver.resetInputState();
         } catch (Exception ignored) {
         }
-    }
-
-    public void runDemoSequence() {
-        forward(1000);
-        sleep(50);
-
-//        backward(1000);
-//        sleep(50);
-//
-//        liftUp(1000);
-//        sleep(50);
-//
-//        liftDown(1000);
-//
-//        forwardLeft(10000);
-//        sleep(50);
-//
-        backwardRight(10000);
-//        sleep(50);
-//
-//        neutral(100);
     }
 
     private void sleep(long ms) {
