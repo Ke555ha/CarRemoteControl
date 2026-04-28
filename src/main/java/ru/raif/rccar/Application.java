@@ -32,13 +32,6 @@ public class Application {
     CommandLineRunner run(CarControllerService service) {
         return args -> {
             service.connect();
-//            service.forward(200);
-            service.liftUp(3000);
-            service.liftDown(3000);
-            //service.forwardLeft(3000);
-            //service.forwardRight(3000);
-            //service.neutral(1000);
-            //service.backwardRight(2000);
         };
     }
 }
